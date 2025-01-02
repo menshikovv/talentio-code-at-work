@@ -1,0 +1,78 @@
+@import '../../app/assets/styles/FormTransitions.scss';
+@import '../../app/assets/styles/variables.scss';
+
+h1, h2, button {
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none;
+    user-select: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.preview {
+    padding: 40px 40px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.389);
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.logo {
+    width: 20px;
+}
+
+svg {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.data {
+    text-align: left;
+    p, strong, .text {
+        margin-bottom: 20px;
+        font-size: 16px;
+        
+    }
+}
+
+.btn__true, .btn__false {
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.btn__false {
+    margin-right: 50px;
+}
+
+.title {
+    font-size: 25px;
+    @media (max-width: 576px) {
+        font-size: 20px;
+    }
+}
+
+.buttons {
+    margin-top: 20px;
+    @media (max-width: 550px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.other {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    color: rgba(229, 229, 229, 0.704);;
+}
+
+.text {
+    font-family: $title-font;
+}
